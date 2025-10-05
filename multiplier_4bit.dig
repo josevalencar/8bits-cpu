@@ -67,7 +67,7 @@
           <string>START</string>
         </entry>
       </elementAttributes>
-      <pos x="220" y="400"/>
+      <pos x="20" y="380"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -107,7 +107,7 @@
           <string>START</string>
         </entry>
       </elementAttributes>
-      <pos x="220" y="400"/>
+      <pos x="180" y="380"/>
     </visualElement>
     <visualElement>
       <elementName>LED</elementName>
@@ -634,6 +634,25 @@
       <elementAttributes/>
       <pos x="420" y="280"/>
     </visualElement>
+    <visualElement>
+      <elementName>RS_FF_AS</elementName>
+      <elementAttributes/>
+      <pos x="80" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>STATE</string>
+        </entry>
+      </elementAttributes>
+      <pos x="40" y="400"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -777,6 +796,10 @@
       <p2 x="360" y="400"/>
     </wire>
     <wire>
+      <p1 x="40" y="400"/>
+      <p2 x="80" y="400"/>
+    </wire>
+    <wire>
       <p1 x="-40" y="-20"/>
       <p2 x="0" y="-20"/>
     </wire>
@@ -863,6 +886,14 @@
     <wire>
       <p1 x="340" y="380"/>
       <p2 x="360" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="20" y="380"/>
+      <p2 x="80" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="140" y="380"/>
+      <p2 x="180" y="380"/>
     </wire>
     <wire>
       <p1 x="560" y="80"/>
