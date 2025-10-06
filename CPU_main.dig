@@ -349,20 +349,20 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>OPCODE</string>
+          <string>ADRESS</string>
         </entry>
       </elementAttributes>
-      <pos x="680" y="540"/>
+      <pos x="720" y="540"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>ADRESS</string>
+          <string>OPCODE</string>
         </entry>
       </elementAttributes>
-      <pos x="680" y="560"/>
+      <pos x="720" y="560"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -1125,7 +1125,7 @@
     </wire>
     <wire>
       <p1 x="660" y="540"/>
-      <p2 x="680" y="540"/>
+      <p2 x="720" y="540"/>
     </wire>
     <wire>
       <p1 x="-20" y="220"/>
@@ -1193,7 +1193,7 @@
     </wire>
     <wire>
       <p1 x="660" y="560"/>
-      <p2 x="680" y="560"/>
+      <p2 x="720" y="560"/>
     </wire>
     <wire>
       <p1 x="740" y="180"/>
