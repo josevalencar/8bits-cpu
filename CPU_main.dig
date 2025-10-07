@@ -306,12 +306,12 @@
       <elementName>ROM</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>CONTROL ROM</string>
-        </entry>
-        <entry>
           <string>AddrBits</string>
           <int>7</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>CONTROL ROM</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -322,7 +322,7 @@
           <data>1800,8,600,900,480,2,0,0,1800,8,600,900,410,a0,2,0,1800,8,600
 ,900,41,2,0,0,1800,8,600,104,2,0,0,0,1800,8,600,104,2,0,0,0,1800
 ,8,600,900,410,8001,80a0,2,1800,8,600,900,410,a001,a0a0,2,1800
-,8,600,900,410,20a0,2,0,1800,8,600,40a0,2,0,0,0,1800,8,600,60a0,2</data>
+,8,600,900,410,20a1,2,0,1800,8,600,40a0,2,0,0,0,1800,8,600,60a0,2</data>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -1135,7 +1135,7 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>a,7b,5c,2d,34,24,36,0,0,0,5,2,97,9,a,5</data>
+          <data>a,7a,45,b,34,c,36,4*0,ee,fb</data>
         </entry>
         <entry>
           <string>intFormat</string>
@@ -1149,7 +1149,7 @@
       <elementAttributes>
         <entry>
           <string>NetName</string>
-          <string>Z_flag</string>
+          <string>Z_FLAG</string>
         </entry>
       </elementAttributes>
       <pos x="1020" y="120"/>
@@ -1598,8 +1598,8 @@
           <string>Color</string>
           <awt-color>
             <red>0</red>
-            <green>153</green>
-            <blue>255</blue>
+            <green>204</green>
+            <blue>204</blue>
             <alpha>255</alpha>
           </awt-color>
         </entry>
@@ -1704,6 +1704,63 @@
         </entry>
       </elementAttributes>
       <pos x="340" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>Z_FLAG</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1220" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Register</elementName>
+      <elementAttributes/>
+      <pos x="1240" y="40"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>START</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1220" y="80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
+          <string>NetName</string>
+          <string>CLK</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1220" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Tunnel</elementName>
+      <elementAttributes>
+        <entry>
+          <string>NetName</string>
+          <string>Z_flag</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1320" y="60"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -1822,6 +1879,10 @@
     <wire>
       <p1 x="500" y="80"/>
       <p2 x="520" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="1220" y="80"/>
+      <p2 x="1240" y="80"/>
     </wire>
     <wire>
       <p1 x="540" y="720"/>
@@ -1984,6 +2045,10 @@
       <p2 x="860" y="360"/>
     </wire>
     <wire>
+      <p1 x="1220" y="40"/>
+      <p2 x="1240" y="40"/>
+    </wire>
+    <wire>
       <p1 x="-20" y="300"/>
       <p2 x="0" y="300"/>
     </wire>
@@ -2082,6 +2147,14 @@
     <wire>
       <p1 x="340" y="60"/>
       <p2 x="360" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1220" y="60"/>
+      <p2 x="1240" y="60"/>
+    </wire>
+    <wire>
+      <p1 x="1300" y="60"/>
+      <p2 x="1320" y="60"/>
     </wire>
     <wire>
       <p1 x="580" y="380"/>
