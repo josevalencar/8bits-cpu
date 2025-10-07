@@ -110,25 +110,6 @@
       <pos x="180" y="380"/>
     </visualElement>
     <visualElement>
-      <elementName>LED</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Color</string>
-          <awt-color>
-            <red>0</red>
-            <green>255</green>
-            <blue>0</blue>
-            <alpha>255</alpha>
-          </awt-color>
-        </entry>
-        <entry>
-          <string>Label</string>
-          <string>DONE</string>
-        </entry>
-      </elementAttributes>
-      <pos x="840" y="320"/>
-    </visualElement>
-    <visualElement>
       <elementName>Register</elementName>
       <elementAttributes>
         <entry>
@@ -654,28 +635,29 @@
       <pos x="40" y="400"/>
     </visualElement>
     <visualElement>
-      <elementName>In</elementName>
+      <elementName>VDD</elementName>
+      <elementAttributes/>
+      <pos x="60" y="380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>START</string>
+          <string>DONE</string>
         </entry>
       </elementAttributes>
-      <pos x="20" y="320"/>
+      <pos x="820" y="320"/>
     </visualElement>
   </visualElements>
   <wires>
-    <wire>
-      <p1 x="800" y="320"/>
-      <p2 x="840" y="320"/>
-    </wire>
     <wire>
       <p1 x="420" y="320"/>
       <p2 x="500" y="320"/>
     </wire>
     <wire>
-      <p1 x="20" y="320"/>
-      <p2 x="40" y="320"/>
+      <p1 x="800" y="320"/>
+      <p2 x="820" y="320"/>
     </wire>
     <wire>
       <p1 x="340" y="160"/>
@@ -906,7 +888,7 @@
       <p2 x="180" y="380"/>
     </wire>
     <wire>
-      <p1 x="40" y="380"/>
+      <p1 x="60" y="380"/>
       <p2 x="80" y="380"/>
     </wire>
     <wire>
@@ -964,10 +946,6 @@
     <wire>
       <p1 x="680" y="20"/>
       <p2 x="680" y="100"/>
-    </wire>
-    <wire>
-      <p1 x="40" y="320"/>
-      <p2 x="40" y="380"/>
     </wire>
     <wire>
       <p1 x="540" y="60"/>

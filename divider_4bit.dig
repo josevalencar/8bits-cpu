@@ -43,10 +43,6 @@
       <elementName>Clock</elementName>
       <elementAttributes>
         <entry>
-          <string>runRealTime</string>
-          <boolean>true</boolean>
-        </entry>
-        <entry>
           <string>Label</string>
           <string>Clk</string>
         </entry>
@@ -88,25 +84,6 @@
         </entry>
       </elementAttributes>
       <pos x="920" y="200"/>
-    </visualElement>
-    <visualElement>
-      <elementName>LED</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Color</string>
-          <awt-color>
-            <red>0</red>
-            <green>255</green>
-            <blue>51</blue>
-            <alpha>255</alpha>
-          </awt-color>
-        </entry>
-        <entry>
-          <string>Label</string>
-          <string>DONE</string>
-        </entry>
-      </elementAttributes>
-      <pos x="800" y="460"/>
     </visualElement>
     <visualElement>
       <elementName>Register</elementName>
@@ -651,14 +628,19 @@
       <pos x="700" y="40"/>
     </visualElement>
     <visualElement>
-      <elementName>In</elementName>
+      <elementName>VDD</elementName>
+      <elementAttributes/>
+      <pos x="100" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>START</string>
+          <string>DONE</string>
         </entry>
       </elementAttributes>
-      <pos x="120" y="320"/>
+      <pos x="740" y="460"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -673,6 +655,10 @@
     <wire>
       <p1 x="680" y="320"/>
       <p2 x="720" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="100" y="320"/>
+      <p2 x="120" y="320"/>
     </wire>
     <wire>
       <p1 x="460" y="0"/>
@@ -704,7 +690,7 @@
     </wire>
     <wire>
       <p1 x="720" y="460"/>
-      <p2 x="800" y="460"/>
+      <p2 x="740" y="460"/>
     </wire>
     <wire>
       <p1 x="-160" y="400"/>
